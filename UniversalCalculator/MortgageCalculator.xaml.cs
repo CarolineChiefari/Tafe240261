@@ -25,6 +25,7 @@ namespace Calculator
 	/// </summary>
 	public sealed partial class MortgageCalculator : Page
 	{
+
 		/// <summary>
 		/// Calculate Monthly Interest Rate Method
 		/// </summary>
@@ -39,6 +40,8 @@ namespace Calculator
 			return monthlyInterestRate;
 		}
 
+
+
 		/// <summary>
 		/// Calculate Monthly Repayments Method
 		/// </summary>
@@ -46,12 +49,12 @@ namespace Calculator
 		/// <param name="principalBorrow"></param>
 		/// <param name="months"></param>
 		/// <returns></returns>
-		public static double calculateMonthlyRepayments(double monthlyInterestRate, int principalBorrow, int months)
+		public static double calculateMonthlyRepayments(double monthlyInterestRate, int principalBorrow, int months, int years)
 		{
 			double monthlyRepayments;
 
 			monthlyRepayments = (principalBorrow * monthlyInterestRate * Math.Pow(1 + monthlyInterestRate, months)) /
-				(Math.Pow(1 + monthlyInterestRate, months - 1));
+				(Math.Pow(1 + monthlyInterestRate, months) - 1);
 
 			return monthlyRepayments;
 
@@ -77,7 +80,7 @@ namespace Calculator
 			}
 			catch (Exception)
 			{
-				var dialog = new MessageDialog("Incorrect price format. Please enter a valid amount(numbers only)");
+				var dialog = new MessageDialog("Incorrect price format. Please enter whole numbers only)");
 				await dialog.ShowAsync();
 				principalBorrowTextBox.Focus(FocusState.Programmatic);
 				return;
@@ -119,18 +122,20 @@ namespace Calculator
 				return;
 			}
 
+			months = (years*12) + months;
+
 			double monthlyInterestRate = calculateMonthlyRate(yearlyInterestRate);
 			monthlyInterestRateTextBox.Text = monthlyInterestRate.ToString("F4") + "%";
 
 
-			double monthlyRepayment = calculateMonthlyRepayments(monthlyInterestRate, principalBorrow, months);
+			double monthlyRepayment = calculateMonthlyRepayments(monthlyInterestRate, principalBorrow, months, years);
 			monthlyRepaymentsTextBox.Text = monthlyRepayment.ToString("C");
 
 		}
 
 		private void exitButton_Click(object sender, RoutedEventArgs e)
 		{
-
+			return MainPage;
 		}
 	}
 }
