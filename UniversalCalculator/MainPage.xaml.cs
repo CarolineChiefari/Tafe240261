@@ -10,7 +10,7 @@ namespace Calculator
 	public sealed partial class MainPage : Page
 	{
 		// default var
-		public static MainPage mainPage { get; set; }
+		public static MortgageCalculator mainPage { get; set; }
 
 		// default functions
 		public MainPage()
