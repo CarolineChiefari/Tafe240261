@@ -122,13 +122,11 @@
     <Compile Include="MainMenu.xaml.cs">
       <DependentUpon>MainMenu.xaml</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="MortgageCalculator.xaml.cs">
       <DependentUpon>MortgageCalculator.xaml</DependentUpon>
-=======
+    </Compile>
     <Compile Include="TripFeature.xaml.cs">
       <DependentUpon>TripFeature.xaml</DependentUpon>
->>>>>>> feature_trip
     </Compile>
     <Compile Include="Utils\Utils.cs" />
     <None Include=".editorconfig" />
@@ -169,7 +167,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-<<<<<<< HEAD
     <Page Include="MainMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -177,15 +174,10 @@
     <Page Include="MortgageCalculator.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-=======
+    </Page>
     <Page Include="TripFeature.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
-    </Page>
-    <Page Include="MainMenu.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
->>>>>>> feature_trip
     </Page>
     <Page Include="Resources\NumberButtonControl.Resources.xaml">
       <SubType>Designer</SubType>
