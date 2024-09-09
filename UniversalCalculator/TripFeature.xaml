@@ -1,0 +1,64 @@
+﻿<Page
+    x:Class="Calculator.TripFeature"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Calculator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="#FF7281BF">
+        <!--Title-->
+        <TextBlock x:Name="universalCalculatorTextBlock" Text="Universal Calculator" Margin="10,10,10,0" FontSize="50" Foreground="Black" HorizontalAlignment="Center" FontFamily="Arial" FontWeight="Bold"/>
+
+        <!-- Trip Calculator UI -->
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="36" FontWeight="Bold" Margin="0,143,0,0" Foreground="Black">
+            Trip Calculator
+        </TextBlock>
+
+        <!-- Date Hire Label and Fields -->
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="517,228,0,0" FontSize="18" Foreground="Black">
+            Date Hire:
+        </TextBlock>
+
+
+
+        <Button x:Name="todayButton" Content="Today's Date" HorizontalAlignment="Right" VerticalAlignment="Top" Width="100" Margin="0,224,332,0" Click="todayButton_Click"/>
+
+        <!-- Starting Kilometers -->
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="517,278,0,0" FontSize="18" Foreground="Black">
+            Starting Kilometers
+        </TextBlock>
+        <TextBox x:Name="startingKilometersTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="717,278,0,0"/>
+
+        <!-- Ending Kilometers -->
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="517,328,0,0" FontSize="18" Foreground="Black">
+            Ending Kilometers
+        </TextBlock>
+        <TextBox x:Name="endingKilometersTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="717,328,0,0"/>
+
+        <!-- Number of Days Hired -->
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="517,378,0,0" FontSize="18" Foreground="Black">
+            Number of Days Hired
+        </TextBlock>
+        <TextBox x:Name="daysHiredTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="717,378,0,0"/>
+
+        <!-- Price Per Day -->
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="517,428,0,0" FontSize="18" Foreground="Black">
+            Price per Day
+        </TextBlock>
+        <TextBox x:Name="pricePerDayTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="717,428,0,0"/>
+
+        <!-- Amount to Pay -->
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="517,478,0,0" FontSize="18" Foreground="Black">
+            Amount to Pay
+        </TextBlock>
+        <TextBox x:Name="amountToPayTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="717,478,0,0" IsReadOnly="True"/>
+
+        <!-- Buttons -->
+        <Button x:Name="calculateButton" Content="Calculator Total" VerticalAlignment="Bottom" Width="150" Margin="472,0,0,385" Click="calculateButton_Click"/>
+        <Button x:Name="exitButton" Content="Exit" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="150" Margin="0,0,485,385" Click="exitButton_Click"/>
+		<DatePicker x:Name="datePicker" Margin="717,224,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Page>

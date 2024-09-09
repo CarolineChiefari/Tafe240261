@@ -36,7 +36,6 @@ namespace Calculator
 		private void mortgageButton_Click(object sender, RoutedEventArgs e)
 		{
 			this.Frame.Navigate(typeof(MortgageCalculator));
-
 		}
 
 		private void currencyButton_Click(object sender, RoutedEventArgs e)
@@ -46,7 +45,7 @@ namespace Calculator
 
 		private void tripButton_Click(object sender, RoutedEventArgs e)
 		{
-
+			this.Frame.Navigate(typeof(TripFeature));
 		}
 
 		private void exitButton_Click(object sender, RoutedEventArgs e)
