@@ -24,7 +24,7 @@
 
 
 
-        <Button x:Name="todayButton" Content="Today's Date" HorizontalAlignment="Right" VerticalAlignment="Top" Width="100" Margin="0,224,332,0"/>
+        <Button x:Name="todayButton" Content="Today's Date" HorizontalAlignment="Right" VerticalAlignment="Top" Width="100" Margin="0,224,332,0" Click="todayButton_Click"/>
 
         <!-- Starting Kilometers -->
         <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="517,278,0,0" FontSize="18" Foreground="Black">
@@ -59,6 +59,6 @@
         <!-- Buttons -->
         <Button x:Name="calculateButton" Content="Calculator Total" VerticalAlignment="Bottom" Width="150" Margin="472,0,0,385" Click="calculateButton_Click"/>
         <Button x:Name="exitButton" Content="Exit" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="150" Margin="0,0,485,385" Click="exitButton_Click"/>
-        <DatePicker Margin="717,224,0,0" VerticalAlignment="Top"/>
+		<DatePicker x:Name="datePicker" Margin="717,224,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Page>

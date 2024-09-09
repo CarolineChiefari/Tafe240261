@@ -51,5 +51,10 @@ namespace Calculator
 
 				amountToPayTextBox.Text = Convert.ToString(totalAmount);
 		}
+
+		private void todayButton_Click(object sender, RoutedEventArgs e)
+		{
+			datePicker.SelectedDate = DateTime.Today;
+		}
 	}
 }
