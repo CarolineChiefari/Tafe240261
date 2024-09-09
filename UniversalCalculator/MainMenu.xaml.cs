@@ -45,7 +45,7 @@ namespace Calculator
 
 		private void tripButton_Click(object sender, RoutedEventArgs e)
 		{
-			//this.Frame.Navigate(typeof());
+			this.Frame.Navigate(typeof(TripFeature));
 		}
 
 		private void exitButton_Click(object sender, RoutedEventArgs e)

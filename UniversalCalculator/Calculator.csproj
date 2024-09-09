@@ -122,7 +122,9 @@
     <Compile Include="MainMenu.xaml.cs">
       <DependentUpon>MainMenu.xaml</DependentUpon>
     </Compile>
-    <Compile Include="TripFeature.cs" />
+    <Compile Include="TripFeature.xaml.cs">
+      <DependentUpon>TripFeature.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Utils\Utils.cs" />
     <None Include=".editorconfig" />
     <Compile Include="Controls\NumberButtonControl.xaml.cs">
@@ -160,6 +162,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="TripFeature.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="MainMenu.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -183,10 +189,6 @@
     <Page Include="Resources\Resources.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="TripFeature.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>
