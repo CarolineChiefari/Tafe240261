@@ -12,6 +12,7 @@
 		<!--Title-->
 		<TextBlock x:Name="universalCalculatorTextBlock" Text="Universal Calculator" Margin="10,50,10,10" FontSize="50" Foreground="Black" HorizontalAlignment="Center" FontFamily="Arial" FontWeight="Bold"/>
 		<Image x:Name="logoImage" Source="..\Assets\abacus.PNG" Width="150" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,30,45,0"/>
+		<TextBlock x:Name="nameTextBlock" Text="Created by Hayden Badenhop and Caroline Chiefari" Margin="13,956,0,16" FontSize="30" Foreground="Black" HorizontalAlignment="Left" FontFamily="Arial" FontWeight="Bold" Width="748" SelectionChanged="nameTextBlock_SelectionChanged"/>
 		<!--Buttons for calculator choice or exit-->
 		<Button x:Name="mathsButton" Content="Maths Calculator" Width="250" Height="100" Margin="0,150,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Background="White" FontSize="22" Foreground="Black" BorderBrush="Black" BorderThickness="5" FontWeight="Bold" Click="mathsButton_Click" />
 		<Button x:Name="mortgageButton" Content="Mortgage Calculator" Width="250" Height="100" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,270,0,0" Background="White" FontSize="22" Foreground="Black" BorderBrush="Black" BorderThickness="5" FontWeight="Bold" Click="mortgageButton_Click" />
