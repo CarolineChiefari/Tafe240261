@@ -8,15 +8,16 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-	<Grid Background="#FF7281BF">
-		<!--Title-->
-		<TextBlock x:Name="universalCalculatorTextBlock" Text="Universal Calculator" Margin="10,50,10,10" FontSize="50" Foreground="Black" HorizontalAlignment="Center" FontFamily="Arial" FontWeight="Bold"/>
-		<Image x:Name="logoImage" Source="..\Assets\abacus.PNG" Width="150" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,30,45,0"/>
-		<!--Buttons for calculator choice or exit-->
-		<Button x:Name="mathsButton" Content="Maths Calculator" Width="250" Height="100" Margin="0,150,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Background="White" FontSize="22" Foreground="Black" BorderBrush="Black" BorderThickness="5" FontWeight="Bold" Click="mathsButton_Click" />
-		<Button x:Name="mortgageButton" Content="Mortgage Calculator" Width="250" Height="100" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,270,0,0" Background="White" FontSize="22" Foreground="Black" BorderBrush="Black" BorderThickness="5" FontWeight="Bold" Click="mortgageButton_Click" />
-		<Button x:Name="currencyButton" Content="Currency Converter" Width="250" Height="100" Margin="0,400,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Background="White" FontSize="22" Foreground="Black" BorderBrush="Black" BorderThickness="5" FontWeight="Bold" Click="currencyButton_Click"/>
-		<Button x:Name="tripButton" Content="Trip Calculator" Width="250" Height="100" Margin="0,530,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Background="White" FontSize="22" Foreground="Black" BorderBrush="Black" BorderThickness="5" FontWeight="Bold" Click="tripButton_Click"/>
-		<Button x:Name="exitButton" Content="Exit" Width="250" Height="100" Margin="0,660,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Background="White" FontSize="22" Foreground="Black" BorderBrush="Black" BorderThickness="5" FontWeight="Bold" Click="exitButton_Click"/>
-	</Grid>
+    <Grid Background="#FF7281BF">
+        <!--Title-->
+        <TextBlock x:Name="universalCalculatorTextBlock" Text="Universal Calculator" Margin="0,41,0,19" FontSize="50" Foreground="Black" HorizontalAlignment="Center" FontFamily="Arial" FontWeight="Bold"/>
+        <Image x:Name="logoImage" Source="..\Assets\abacus.PNG" Width="150" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,30,45,0"/>
+        <!--Buttons for calculator choice or exit-->
+        <Button x:Name="mathsButton" Content="Maths Calculator" Width="250" Height="100" Margin="0,150,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Background="White" FontSize="22" Foreground="Black" BorderBrush="Black" BorderThickness="5" FontWeight="Bold" Click="mathsButton_Click" />
+        <Button x:Name="mortgageButton" Content="Mortgage Calculator" Width="250" Height="100" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,270,0,0" Background="White" FontSize="22" Foreground="Black" BorderBrush="Black" BorderThickness="5" FontWeight="Bold" Click="mortgageButton_Click" />
+        <Button x:Name="currencyButton" Content="Currency Converter" Width="250" Height="100" Margin="0,400,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Background="White" FontSize="22" Foreground="Black" BorderBrush="Black" BorderThickness="5" FontWeight="Bold" Click="currencyButton_Click"/>
+        <Button x:Name="tripButton" Content="Trip Calculator" Width="250" Height="100" Margin="0,530,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Background="White" FontSize="22" Foreground="Black" BorderBrush="Black" BorderThickness="5" FontWeight="Bold" Click="tripButton_Click"/>
+        <Button x:Name="exitButton" Content="Exit" Width="250" Height="100" Margin="0,660,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Background="White" FontSize="22" Foreground="Black" BorderBrush="Black" BorderThickness="5" FontWeight="Bold" Click="exitButton_Click"/>
+        <TextBlock x:Name="universalCalculatorTextBlock_Copy" Text="Development by team 61" Margin="10,933,0,15" FontSize="50" Foreground="Black" HorizontalAlignment="Left" FontFamily="Arial" FontWeight="Bold" SelectionChanged="universalCalculatorTextBlock_Copy_SelectionChanged"/>
+    </Grid>
 </Page>
